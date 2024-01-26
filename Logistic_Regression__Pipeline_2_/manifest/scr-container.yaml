@@ -1,0 +1,15 @@
+Application:
+  Name: logistic_regression__pipeline_2_0
+MasterImage:
+  URL: ewacr.azurecr.io/viya-4-x64_oci_linux_2-docker/sas-decisions-runtime-components:1.28.30-20230314.1678821753532
+BaseImage:
+  URL: ewacr.azurecr.io/viya-4-x64_oci_linux_2-docker/sas-decisions-runtime-base:1.46.31-20230314.1678821270125
+Destination:
+  URL: ewacr.azurecr.io
+  ImageName: Logistic_Regression__Pipeline_2_
+  Tags:
+  - latest
+ResourceCategories: []
+Languages: []
+Databases: []
+PythonResources: []
