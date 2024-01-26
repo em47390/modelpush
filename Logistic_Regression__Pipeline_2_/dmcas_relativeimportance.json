@@ -1,0 +1,427 @@
+{
+  "creationTimeStamp" : "0001-01-01T00:00:00Z",
+  "modifiedTimeStamp" : "0001-01-01T00:00:00Z",
+  "revision" : 0,
+  "name" : "dmcas_relativeimportance",
+  "version" : 0,
+  "order" : 0,
+  "parameterMap" : {
+    "LABEL" : {
+      "label" : "Variable Label",
+      "length" : 256,
+      "order" : 1,
+      "parameter" : "LABEL",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "LABEL" ]
+    },
+    "LEVEL" : {
+      "label" : "Variable Level",
+      "length" : 10,
+      "order" : 5,
+      "parameter" : "LEVEL",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "LEVEL" ]
+    },
+    "ROLE" : {
+      "label" : "Role",
+      "length" : 32,
+      "order" : 4,
+      "parameter" : "ROLE",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "ROLE" ]
+    },
+    "RelativeImportance" : {
+      "label" : "Relative Importance",
+      "length" : 8,
+      "order" : 3,
+      "parameter" : "RelativeImportance",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "RelativeImportance" ]
+    },
+    "Variable" : {
+      "label" : "Variable Name",
+      "length" : 255,
+      "order" : 2,
+      "parameter" : "Variable",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "Variable" ]
+    }
+  },
+  "data" : [ {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "1",
+      "Variable" : "AVG_of_BLOWER02"
+    },
+    "rowNumber" : 1
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP01"
+    },
+    "rowNumber" : 2
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP1"
+    },
+    "rowNumber" : 3
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP10"
+    },
+    "rowNumber" : 4
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP11"
+    },
+    "rowNumber" : 5
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP12"
+    },
+    "rowNumber" : 6
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP13"
+    },
+    "rowNumber" : 7
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP14"
+    },
+    "rowNumber" : 8
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP15"
+    },
+    "rowNumber" : 9
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP16"
+    },
+    "rowNumber" : 10
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP2"
+    },
+    "rowNumber" : 11
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP3"
+    },
+    "rowNumber" : 12
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP4"
+    },
+    "rowNumber" : 13
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP5"
+    },
+    "rowNumber" : 14
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP6"
+    },
+    "rowNumber" : 15
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP7"
+    },
+    "rowNumber" : 16
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP8"
+    },
+    "rowNumber" : 17
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_AMP9"
+    },
+    "rowNumber" : 18
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_BLOWER01"
+    },
+    "rowNumber" : 19
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_DEWPOINT01"
+    },
+    "rowNumber" : 20
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_DPT01"
+    },
+    "rowNumber" : 21
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_DPT02"
+    },
+    "rowNumber" : 22
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_FEEDAMP"
+    },
+    "rowNumber" : 23
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_FEEDHZ"
+    },
+    "rowNumber" : 24
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_FLOW"
+    },
+    "rowNumber" : 25
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_HZ01"
+    },
+    "rowNumber" : 26
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_MILLAMP"
+    },
+    "rowNumber" : 27
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_MILLHZ"
+    },
+    "rowNumber" : 28
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_O2FT_MAIN"
+    },
+    "rowNumber" : 29
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_PRESSURE01"
+    },
+    "rowNumber" : 30
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_SEPAMP"
+    },
+    "rowNumber" : 31
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_SEPHZ"
+    },
+    "rowNumber" : 32
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_SPEED"
+    },
+    "rowNumber" : 33
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_TEMP3"
+    },
+    "rowNumber" : 34
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_TEMP4"
+    },
+    "rowNumber" : 35
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_TEMP5"
+    },
+    "rowNumber" : 36
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "AVG_of_TEMP6"
+    },
+    "rowNumber" : 37
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "NOMINAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "INSP_ITEM"
+    },
+    "rowNumber" : 38
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "NOMINAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "LSL"
+    },
+    "rowNumber" : 39
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "NOMINAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "USL"
+    },
+    "rowNumber" : 40
+  }, {
+    "dataMap" : {
+      "LABEL" : "",
+      "LEVEL" : "INTERVAL",
+      "ROLE" : "INPUT",
+      "RelativeImportance" : "0",
+      "Variable" : "VALUE"
+    },
+    "rowNumber" : 41
+  } ],
+  "xInteger" : false,
+  "yInteger" : false
+}

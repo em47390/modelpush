@@ -1,0 +1,92 @@
+[
+   {
+      "name": "EM_CLASSIFICATION",
+      "description": "",
+      "role": "output",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 5
+   },
+   {
+      "name": "I_DEF",
+      "description": "",
+      "role": "output",
+      "type": "string",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 5
+   },
+   {
+      "name": "_CLUSTER_ID_",
+      "description": "",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "_DISTANCE_",
+      "description": "",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "_STANDARDIZED_DISTANCE_",
+      "description": "",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "EM_EVENTPROBABILITY",
+      "description": "",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "EM_PROBABILITY",
+      "description": "",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "P_DEFMIS_H",
+      "description": "",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   },
+   {
+      "name": "P_DEFOK",
+      "description": "",
+      "role": "output",
+      "type": "decimal",
+      "level": "",
+      "format": "",
+      "aggregation": "",
+      "length": 8
+   }
+]

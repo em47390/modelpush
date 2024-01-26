@@ -1,0 +1,12 @@
+{
+  "scoreType" : "ds2MultiType",
+  "algorithm" : "Logistic Regression",
+  "algorithmI18N" : "logistic.regression.node.name.txt",
+  "enableRegistration" : "true",
+  "enableScoring" : "true",
+  "astores" : {
+    "scoreResources" : {
+      "resource1" : "_ZT5K8HFT9737OKKI23QHL6U1_AST"
+    }
+  }
+}
