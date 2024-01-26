@@ -1,0 +1,942 @@
+{
+  "version" : 2,
+  "name" : "Logistic Regression (Pipeline 1)",
+  "modeler" : "emlynwang",
+  "function" : "classification",
+  "algorithm" : "logisticreg",
+  "tool" : "Model Studio",
+  "toolVersion" : "V2023.03",
+  "targetEvent" : "OK",
+  "sourceUri" : {
+    "name" : "Logistic Regression",
+    "uri" : "/analyticsComponents/components/99a585cf-3541-464c-82ad-d4db34d0af8d",
+    "uriType" : "reference",
+    "mediaType" : "application/vnd.sas.analytics.component"
+  },
+  "candidateChampion" : true,
+  "nondeterministic" : false,
+  "datasourceUri" : {
+    "name" : "MANU_MAPPING",
+    "uri" : "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/MANU_MAPPING",
+    "uriType" : "reference"
+  },
+  "externalModelId" : "99a585cf-3541-464c-82ad-d4db34d0af8d",
+  "fitStatUri" : {
+    "name" : "dmcas_fitstat",
+    "uri" : "/files/files/f5c0cada-74a4-4317-b9b0-745f70661635",
+    "uriType" : "child",
+    "mediaType" : "application/vnd.sas.analytics.report+json"
+  },
+  "sasOptions" : "options VALIDMEMNAME=EXTEND VALIDVARNAME=ANY;\n",
+  "partitionLevels" : [ {
+    "variableName" : "_PartInd_",
+    "dataRole" : "train",
+    "type" : "partition",
+    "value" : "           1"
+  }, {
+    "variableName" : "_PartInd_",
+    "dataRole" : "validate",
+    "type" : "partition",
+    "value" : "           0"
+  }, {
+    "variableName" : "_PartInd_",
+    "dataRole" : "test",
+    "type" : "partition",
+    "value" : "           2"
+  } ],
+  "eventLevels" : [ {
+    "variableName" : "I_DEF",
+    "eventValue" : ""
+  }, {
+    "variableName" : "P_DEFOK",
+    "eventValue" : "OK"
+  }, {
+    "variableName" : "P_DEFMIS_H",
+    "eventValue" : "MIS_H"
+  } ],
+  "interactions" : [ ],
+  "modelTransformation" : {
+    "inputVariables" : [ {
+      "name" : "AVG_of_AMP01",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP1",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP10",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP11",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP12",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP13",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP14",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP15",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP16",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP2",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP3",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP4",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP5",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP6",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP7",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP8",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_AMP9",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_BLOWER01",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_BLOWER02",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_DEWPOINT01",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_DPT01",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_DPT02",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_FEEDAMP",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_FEEDHZ",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_FLOW",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_HZ01",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_MILLAMP",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_MILLHZ",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_O2FT_MAIN",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_PRESSURE01",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_SEPAMP",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_SEPHZ",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_SPEED",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_TEMP3",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_TEMP4",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_TEMP5",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "AVG_of_TEMP6",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "INSP_ITEM",
+      "role" : "input",
+      "type" : "string",
+      "level" : "nominal",
+      "label" : "",
+      "length" : 4,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "LSL",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "nominal",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "USL",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "nominal",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "VALUE",
+      "role" : "input",
+      "type" : "numeric",
+      "level" : "interval",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    } ],
+    "outputVariables" : [ {
+      "name" : "EM_CLASSIFICATION",
+      "role" : "classification",
+      "type" : "string",
+      "label" : "Predicted for DEF",
+      "length" : 5,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "EM_EVENTPROBABILITY",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Probability for DEF=OK",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "EM_PROBABILITY",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Probability of Classification",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "I_DEF",
+      "role" : "classification",
+      "type" : "string",
+      "label" : "Into: DEF",
+      "length" : 5,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "P_DEFMIS_H",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Predicted: DEF=MIS_H",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "P_DEFOK",
+      "role" : "prediction",
+      "type" : "numeric",
+      "label" : "Predicted: DEF=OK",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "_CLUSTER_ID_",
+      "role" : "segment",
+      "type" : "numeric",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "_DISTANCE_",
+      "role" : "reject",
+      "type" : "numeric",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    }, {
+      "name" : "_STANDARDIZED_DISTANCE_",
+      "role" : "reject",
+      "type" : "numeric",
+      "label" : "",
+      "length" : 8,
+      "format" : "",
+      "transformationVariable" : false
+    } ],
+    "steps" : [ {
+      "sequence" : 1,
+      "type" : "ds1",
+      "stepUri" : {
+        "name" : "score.sas",
+        "uri" : "/files/files/964dc841-2fc2-4db5-a4ed-02172d382dd5",
+        "uriType" : "child",
+        "contentType" : "ds1"
+      },
+      "inputVariables" : [ ],
+      "outputVariables" : [ ]
+    } ]
+  },
+  "transformations" : [ {
+    "inputVariables" : [ ],
+    "outputVariables" : [ ],
+    "steps" : [ {
+      "sequence" : 1,
+      "type" : "astore",
+      "stepUri" : {
+        "name" : "_ZT5K8HFT9737OKKI23QHL6U1_ast",
+        "uri" : "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Analytics_Project_704f35db-de39-4dc5-a559-b56d05b5f649/tables/_ZT5K8HFT9737OKKI23QHL6U1_AST?state=loaded",
+        "uriType" : "copy",
+        "contentType" : "astore"
+      },
+      "inputVariables" : [ ],
+      "outputVariables" : [ ]
+    } ]
+  } ],
+  "trainInputs" : [ {
+    "name" : "AVG_of_AMP01",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP1",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP10",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP11",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP12",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP13",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP14",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP15",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP16",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP2",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP3",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP4",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP5",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP6",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP7",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP8",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_AMP9",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_BLOWER01",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_BLOWER02",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_DEWPOINT01",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_DPT01",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_DPT02",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_FEEDAMP",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_FEEDHZ",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_FLOW",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_HZ01",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_MILLAMP",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_MILLHZ",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_O2FT_MAIN",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_PRESSURE01",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_SEPAMP",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_SEPHZ",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_SPEED",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_TEMP3",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_TEMP4",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_TEMP5",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "AVG_of_TEMP6",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "VALUE",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "interval",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "INSP_ITEM",
+    "role" : "input",
+    "type" : "string",
+    "level" : "nominal",
+    "label" : "",
+    "length" : 4,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "LSL",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "nominal",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "USL",
+    "role" : "input",
+    "type" : "numeric",
+    "level" : "nominal",
+    "label" : "",
+    "length" : 8,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "_PartInd_",
+    "role" : "partition",
+    "type" : "numeric",
+    "level" : "nominal",
+    "label" : "_PartInd_",
+    "length" : 8,
+    "transformationVariable" : false
+  }, {
+    "name" : "DEF",
+    "role" : "target",
+    "type" : "string",
+    "level" : "binary",
+    "label" : "",
+    "length" : 5,
+    "format" : "",
+    "transformationVariable" : false
+  }, {
+    "name" : "_dmIndex_",
+    "role" : "key",
+    "type" : "numeric",
+    "level" : "interval",
+    "length" : 8,
+    "transformationVariable" : true
+  } ],
+  "modelNodeProperties" : [ {
+    "sequence" : 1,
+    "actionName" : "regression.genmod",
+    "content" : "{\n \"class\":   \n  [\n   {\n    \"vars\": [ \"INSP_ITEM\", \"LSL\", \"USL\" ]\n   }  \n  ],\n \"code\":\n  {\n   \"comment\": false,\n   \"fmtWdth\": 20,\n   \"iProb\": true,\n   \"indentSize\": 3,\n   \"labelId\": 95517271,\n   \"lineSize\": 120,\n   \"noTrim\": false,\n   \"pCatAll\": true,\n   \"tabForm\": true\n  },\n \"model\":\n  {\n   \"depVars\":     \n    [\n     {\n      \"name\": \"DEF\",\n      \"options\":\n       {\n        \"event\": \"OK\"\n       }\n     }    \n    ],\n   \"dist\": \"BERNOULLI\",\n   \"effects\":     \n    [\n     {\n      \"vars\": [ \"AVG_of_AMP01\", \"AVG_of_AMP1\", \"AVG_of_AMP10\", \"AVG_of_AMP11\", \"AVG_of_AMP12\", \"AVG_of_AMP13\", \"AVG_of_AMP14\", \"AVG_of_AMP15\", \"AVG_of_AMP16\", \"AVG_of_AMP2\", \"AVG_of_AMP3\", \"AVG_of_AMP4\", \"AVG_of_AMP5\", \"AVG_of_AMP6\", \"AVG_of_AMP7\", \"AVG_of_AMP8\", \"AVG_of_AMP9\", \"AVG_of_BLOWER01\", \"AVG_of_BLOWER02\", \"AVG_of_DEWPOINT01\", \"AVG_of_DPT01\", \"AVG_of_DPT02\", \"AVG_of_FEEDAMP\", \"AVG_of_FEEDHZ\", \"AVG_of_FLOW\", \"AVG_of_HZ01\", \"AVG_of_MILLAMP\", \"AVG_of_MILLHZ\", \"AVG_of_O2FT_MAIN\", \"AVG_of_PRESSURE01\", \"AVG_of_SEPAMP\", \"AVG_of_SEPHZ\", \"AVG_of_SPEED\", \"AVG_of_TEMP3\", \"AVG_of_TEMP4\", \"AVG_of_TEMP5\", \"AVG_of_TEMP6\", \"VALUE\", \"INSP_ITEM\", \"LSL\", \"USL\" ]\n     }    \n    ],\n   \"link\": \"LOGIT\"\n  },\n \"normalize\": true,\n \"optimization\":\n  {\n   \"technique\": \"NRRIDG\"\n  },\n \"partByVar\":\n  {\n   \"name\": \"_PartInd_\",\n   \"test\": \"2\",\n   \"train\": \"1\",\n   \"validate\": \"0\"\n  },\n \"selection\":\n  {\n   \"choose\": \"SBC\",\n   \"hierarchy\": \"NONE\",\n   \"method\": \"STEPWISE\",\n   \"select\": \"SBC\",\n   \"slEntry\": 0.05,\n   \"slStay\": 0.05,\n   \"stop\": \"SBC\"\n  },\n \"table\":\n  {\n   \"name\": \"_INPUT_93GQLBVUVAYYGWZUXHWT8P1FX\"\n  }\n}"
+  } ],
+  "rocDataUri" : {
+    "name" : "dmcas_roc",
+    "uri" : "/files/files/5d07d07d-18f5-4c1b-bf64-8f1740fe4bf3",
+    "uriType" : "child",
+    "mediaType" : "application/vnd.sas.analytics.report+json"
+  },
+  "liftDataUri" : {
+    "name" : "dmcas_lift",
+    "uri" : "/files/files/d4ccdfa1-a55a-49cb-ab20-8659c2fdf952",
+    "uriType" : "child",
+    "mediaType" : "application/vnd.sas.analytics.report+json"
+  }
+}

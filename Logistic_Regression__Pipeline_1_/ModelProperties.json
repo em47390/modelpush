@@ -1,0 +1,23 @@
+{
+   "creationTimeStamp": "2023-04-13T07:34:09.225Z",
+   "createdBy": "emlynwang",
+   "modifiedTimeStamp": "2023-04-13T08:08:05.840Z",
+   "modifiedBy": "emlynwang",
+   "id": "19883269-a98b-43b0-9f0e-b8a39ca486e7",
+   "name": "Logistic Regression (Pipeline 1)",
+   "scoreCodeType": "dataStep",
+   "algorithm": "logisticreg",
+   "function": "classification",
+   "modeler": "emlynwang",
+   "trainTable": "/dataTables/dataSources/cas~fs~cas-shared-default~fs~Public/tables/MANU_MAPPING",
+   "eventProbVar": "P_DEFOK",
+   "targetVariable": "DEF",
+   "targetEvent": "OK",
+   "targetLevel": "binary",
+   "tool": "Model Studio",
+   "toolVersion": "V2023.03",
+   "publishTimeStamp": 1681373282974,
+   "externalModelId": "99a585cf-3541-464c-82ad-d4db34d0af8d",
+   "modelVersionName": "6.0",
+   "custom properties": []
+}

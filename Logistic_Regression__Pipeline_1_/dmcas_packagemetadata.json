@@ -1,0 +1,404 @@
+{
+  "SASJSONExport" : "1.0 FMTCHARACTER",
+  "SASTableData+ARGUMENTS" : [ {
+    "name" : "AVG_of_AMP01",
+    "order" : 1,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP1",
+    "order" : 2,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP10",
+    "order" : 3,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP11",
+    "order" : 4,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP12",
+    "order" : 5,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP13",
+    "order" : 6,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP14",
+    "order" : 7,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP15",
+    "order" : 8,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP16",
+    "order" : 9,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP2",
+    "order" : 10,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP3",
+    "order" : 11,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP4",
+    "order" : 12,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP5",
+    "order" : 13,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP6",
+    "order" : 14,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP7",
+    "order" : 15,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP8",
+    "order" : 16,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_AMP9",
+    "order" : 17,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_BLOWER01",
+    "order" : 18,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_BLOWER02",
+    "order" : 19,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_DEWPOINT01",
+    "order" : 20,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_DPT01",
+    "order" : 21,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_DPT02",
+    "order" : 22,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_FEEDAMP",
+    "order" : 23,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_FEEDHZ",
+    "order" : 24,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_FLOW",
+    "order" : 25,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_HZ01",
+    "order" : 26,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_MILLAMP",
+    "order" : 27,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_MILLHZ",
+    "order" : 28,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_O2FT_MAIN",
+    "order" : 29,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_PRESSURE01",
+    "order" : 30,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_SEPAMP",
+    "order" : 31,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_SEPHZ",
+    "order" : 32,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_SPEED",
+    "order" : 33,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_TEMP3",
+    "order" : 34,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_TEMP4",
+    "order" : 35,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_TEMP5",
+    "order" : 36,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "AVG_of_TEMP6",
+    "order" : 37,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "INSP_ITEM",
+    "order" : 38,
+    "argtype" : "INPUT",
+    "type" : "C",
+    "vartype" : "varchar",
+    "format" : "",
+    "length" : 4
+  }, {
+    "name" : "LSL",
+    "order" : 39,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "USL",
+    "order" : 40,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "VALUE",
+    "order" : 41,
+    "argtype" : "INPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "EM_CLASSIFICATION",
+    "order" : 42,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "C",
+    "vartype" : "char",
+    "format" : "",
+    "length" : 5
+  }, {
+    "name" : "EM_EVENTPROBABILITY",
+    "order" : 43,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "EM_PROBABILITY",
+    "order" : 44,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "I_DEF",
+    "order" : 45,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "C",
+    "vartype" : "char",
+    "format" : "",
+    "length" : 5
+  }, {
+    "name" : "P_DEFMIS_H",
+    "order" : 46,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "P_DEFOK",
+    "order" : 47,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "_CLUSTER_ID_",
+    "order" : 48,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "_DISTANCE_",
+    "order" : 49,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  }, {
+    "name" : "_STANDARDIZED_DISTANCE_",
+    "order" : 50,
+    "argtype" : "INPUT_OUTPUT",
+    "type" : "N",
+    "vartype" : "double",
+    "format" : "",
+    "length" : 8
+  } ]
+}

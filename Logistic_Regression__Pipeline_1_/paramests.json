@@ -1,0 +1,131 @@
+{
+  "creationTimeStamp" : "0001-01-01T00:00:00Z",
+  "modifiedTimeStamp" : "0001-01-01T00:00:00Z",
+  "revision" : 0,
+  "name" : "paramests",
+  "version" : 0,
+  "order" : 0,
+  "parameterMap" : {
+    "AbsEstimate" : {
+      "label" : "Absolute Estimate",
+      "length" : 8,
+      "order" : 6,
+      "parameter" : "AbsEstimate",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "AbsEstimate" ]
+    },
+    "ChiSq" : {
+      "label" : "Chi-Square",
+      "length" : 8,
+      "order" : 8,
+      "parameter" : "ChiSq",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "ChiSq" ]
+    },
+    "DF" : {
+      "label" : "Degrees of Freedom",
+      "length" : 8,
+      "order" : 10,
+      "parameter" : "DF",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "DF" ]
+    },
+    "Effect" : {
+      "label" : "Effect",
+      "length" : 15,
+      "order" : 1,
+      "parameter" : "Effect",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "Effect" ]
+    },
+    "Estimate" : {
+      "label" : "Estimate",
+      "length" : 8,
+      "order" : 5,
+      "parameter" : "Estimate",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "Estimate" ]
+    },
+    "Parameter" : {
+      "label" : "Parameter",
+      "length" : 15,
+      "order" : 2,
+      "parameter" : "Parameter",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "Parameter" ]
+    },
+    "ProbChiSq" : {
+      "label" : "Pr > Chi-Square",
+      "length" : 8,
+      "order" : 9,
+      "parameter" : "ProbChiSq",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "ProbChiSq" ]
+    },
+    "StdErr" : {
+      "label" : "Standard Error",
+      "length" : 8,
+      "order" : 7,
+      "parameter" : "StdErr",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "StdErr" ]
+    },
+    "sign" : {
+      "label" : "Sign",
+      "length" : 1,
+      "order" : 4,
+      "parameter" : "sign",
+      "preformatted" : false,
+      "type" : "char",
+      "values" : [ "sign" ]
+    },
+    "tvalue" : {
+      "label" : "t Value",
+      "length" : 8,
+      "order" : 3,
+      "parameter" : "tvalue",
+      "preformatted" : false,
+      "type" : "num",
+      "values" : [ "tvalue" ]
+    }
+  },
+  "data" : [ {
+    "dataMap" : {
+      "AbsEstimate" : "5.4168910577",
+      "ChiSq" : "44.8762305282",
+      "DF" : "1",
+      "Effect" : "Intercept",
+      "Estimate" : "5.4168910577",
+      "Parameter" : "Intercept",
+      "ProbChiSq" : "2.09890300746e-11",
+      "StdErr" : "0.808615228689",
+      "sign" : "+",
+      "tvalue" : "6.69897234867"
+    },
+    "rowNumber" : 1
+  }, {
+    "dataMap" : {
+      "AbsEstimate" : "1.39592928066",
+      "ChiSq" : "13.3015648906",
+      "DF" : "1",
+      "Effect" : "AVG_of_BLOWER02",
+      "Estimate" : "-1.39592928066",
+      "Parameter" : "AVG_of_BLOWER02",
+      "ProbChiSq" : "0.000265184691924",
+      "StdErr" : "0.382747222899",
+      "sign" : "-",
+      "tvalue" : "3.64713104928"
+    },
+    "rowNumber" : 2
+  } ],
+  "xInteger" : false,
+  "yInteger" : false
+}
